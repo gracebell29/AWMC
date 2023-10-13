@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenLayers GeoJSON Example</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="ol/dist/ol.js"></script>
+
+</head>
+<body>
+    <div id="menu-bar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" id="searchLink">Searchable Index</a></li>
+        </ul>
+    </div>
+    <div id="map"></div>
+    <div id="popup" class="ol-popup">
+        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+        <div id="popup-content"></div>
+    </div>
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <a href="#" id="overlay-closer" class="overlay-closer">×</a>
+            <br/>
+            <table id="feature-table" class="display">
+                <thead>
+                    <tr>
+                        <th>Map Entry</th>
+                        <th>Ftr Type</th>
+                        <th>BA_1</th>
+                        <th>Dir Entry1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be inserted here dynamically -->
+                </tbody>
+            </table>
+                </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
