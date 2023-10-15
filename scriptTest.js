@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     const vectorSource = new ol.source.Vector({
-        url: 'points.geojson',
+        url: 'IsidoreMisc.geojson',
         format: new ol.format.GeoJSON(),
     });
 
